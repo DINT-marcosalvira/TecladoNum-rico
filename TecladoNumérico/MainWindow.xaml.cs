@@ -24,5 +24,12 @@ namespace TecladoNumérico
         {
             InitializeComponent();
         }
+
+        private void Boton_Click(object sender, RoutedEventArgs e)
+        {
+            Button but =  (Button)sender;
+            
+            BloqueTexto.Text += but.Tag;
+        }
     }
 }
